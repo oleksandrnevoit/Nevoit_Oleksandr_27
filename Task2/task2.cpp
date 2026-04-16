@@ -32,7 +32,7 @@ double ProductCubeRoots(const double arr[], int size)
 double CalculateZ(int n, const double x[], int size)
 {
     double firstPart = (Factorial(5 * n - 4) + 8.0) / Factorial(2 * n + 1);
-    double secondPart = (Factorial(n) + ProductArray(x, size)) / ProductCubeRoots(x, size);
+    double secondPart = (Factorial(n) * ProductArray(x, size)) / ProductCubeRoots(x, size);
 
     return firstPart + secondPart;
 }
